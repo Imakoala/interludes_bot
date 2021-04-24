@@ -1,0 +1,15 @@
+[package]
+name = "sporz_bot"
+version = "0.1.0"
+authors = ["Timothée Le Berre <timothee.le.berre@ens.fr>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = {version="0.10", features = ["collector"]}
+tokio = {version="1", features = ["macros", "rt-multi-thread"]}
+futures = "0.3.13"
+dotenv = "0.15"
+rand = ""
+thiserror = "1"
